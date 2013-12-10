@@ -5,7 +5,7 @@ Simple chat application using Node.js and WebRTC Data Channel
 <ul>
 <li>Guest: User comming to our website</li>
 <li>Host: Supportor of the website, answering guests ' questions</li>
-<li>Server: Broker, relay message between guests and host</li>
+<li>Server: Broker, peer registration and chat session initiation server</li>
 </ul>
 
 <br/>
