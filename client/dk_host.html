@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DK Host</title>
+
+<style>
+div#buttons {
+  margin: 0 0 1em 0;
+}
+div#receive {
+}
+div#send {
+  float: left;
+  margin: 0 3em 1em 0;
+}
+div#sendReceive {
+  margin: 0 0 1em 0;
+}
+\h1 {
+  margin: 0 0 1em 0;
+}
+h2 {
+  margin: 0 0 0.5em 0;
+}
+textarea {
+  color: #444;
+  font-family: 'Courier New', monospace;
+  font-size: 1em;
+  height: 7.0em;
+  padding: 0.5em;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="buttons">
+    <button id="btRegister">Register</button>
+    <button id="btInvite">Invite</button>
+    <button id="btSend">Send</button>
+ </div>
+
+<div id="sendReceive">
+	<div id="send">
+  		<h2>Send</h2>
+  		<textarea id="taSend"></textarea>
+	</div>
+	<div id="receive">
+  		<h2>Receive</h2>
+  		<textarea id="taReceive"></textarea>
+	</div>
+    <div id="guestList">
+  		<h2>Guest list</h2>
+  		<textarea id="taGuestList"></textarea>
+	</div>
+</div>
+
+<script src='/socket.io/socket.io.js'></script>
+<script src='/adapter.js'></script>
+<script src='/dk_host.js'></script>
+
+</body>
+</html>
